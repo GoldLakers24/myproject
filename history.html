@@ -1,1 +1,121 @@
-
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="A student research website explainging HTTP and modern web communication.">
+        <title>HTTP: From Early Web to Modern Applications  |  Understanding HTTP</title>
+        <link rel="stylesheet" href="styles.css"
+    </head>
+    <body>
+        <!--Shared header abd navigation appear on every page.-->
+        <header class="site-header">
+            <div class="container header-inner">
+                <a class="brand" href="index.html">Understanding HTTP</a>
+                <nav aria-label="Main navigation">
+                    <a href="index.html" aria-current="page" class="active">Home</a>
+                    <a href="histroy.html">HTTP Histroy</a>
+                    <a href="how-it-works.html">How HTTP Works</a>
+                    <a href="modern=http.html">Modern HTTP</a>
+                    <a href="references.html">References</a>
+                </nav>
+            </div>
+        </header>
+        <main id="main-content">
+            <section class="page-heading">
+                <div class="container">
+                    <p class="eyebrow"> IT 3203 • Research Website</p>
+                    <h1>The History of HTTP</h1>
+                    <p class="lead">Explore the major versions of HTTP and the improvements that shaped the modern web.</p>
+                </div>
+            </section>
+            <div class="container content">
+                <section class="panel">
+                    <h2>Why has HTTP changed?</h2>
+                    <p>Early websites were mainly simple documents. As websites began using more images, scripts, and interactive features, HTTP needed to become more capable and efficient. Each version addressed limitations of earlier versions.</p>
+                </section>
+                <section class="panel">
+                    <h2>The evolution of HTTP</h2>
+                    <div class="timeline">
+                        <article>
+                            <span class="year">Early 1990s</span>
+                            <h3>HTTP/0.9</h3>
+                            <p>The earliest version used a simple GET request and returned an HTML document. It did not have the headers and status codes found in later versions</p>
+                        </article>
+                        <article>
+                            <span class="year">1996</span>
+                            <h3>HTTP/1.0</h3>
+                            <p>Added headers and status codes. These helped browsers understand what kind of content was returned and whether a request succeeded.</p>
+                        </article>
+                        <article>
+                            <span class="year">1997</span>
+                            <h3>HTTP/1.1</h3>
+                            <p>Intoduced persistent connections, allowing multiple requests to reuse a connection. This reduced the need to establish a new connection for every resource.</p>
+                        </article>
+                        <article>
+                            <span class="year">2015</span>
+                            <h3>HTTP/2</h3>
+                            <p>Introduced binary framing, multiplexing, and header compression. Multiple streams can share one TCP connection, making it easier to load pages with many resources.</p>
+                        </article>
+                        <article>
+                            <span class="year">2022</span>
+                            <h3>HTTP/3</h3>
+                            <p>Uses QUIC instead of TCP as its underlying transport. QUIC supports independent streams and can reduce certain delays caused by packet loss.</p>
+                        </article>
+                    </div>                
+                </section>
+                <section class="panel">
+                    <h2>Comparing the versions</h2>
+                    <div class="table-scroll">
+                        <table>
+                            <caption>
+                                Major changes across HTTP versions
+                            </caption>
+                            <thread>
+                                <tr>
+                                    <th>Versions</th>
+                                    <th>Key improvements</th>
+                                    <th>Why it matters</th>
+                                </tr>
+                            </thread>
+                            <tbody>
+                                <tr>
+                                    <td>0.9</td>
+                                    <td>Simple GET</td>
+                                    <td>basic document retrieval</td>
+                                </tr>
+                                <tr>
+                                    <td>1.0</td>
+                                    <td>Headers and status codes</td>
+                                    <td>more types of content and clearer results</td>
+                                </tr>
+                                <tr>
+                                    <td>1.1</td>
+                                    <td>Persistent connections</td>
+                                    <td>Less connection overhead</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Multiplexing</td>
+                                    <td>Multiple streams on one TCP connection</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>QUIC transport</td>
+                                    <td>Better handling of some network delays</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <!--Required course attribution, "this is a class project"-->
+        <footer class="site-footer">
+            <div class="container">
+                <p>Created by Noah Plonk • IT 3203 • Fall 2026</p>
+                <p>This website is a class project. Visit the <a href="https://ksuweb.github.io/IT3203?">IT 3203 course website</a></p>
+            </div>
+        </footer>
+    </body>
+</html>
