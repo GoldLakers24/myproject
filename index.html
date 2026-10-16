@@ -1,1 +1,89 @@
-this is the homepage of my site.
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="A student research website explainging HTTP and modern web communication.">
+        <title>HTTP: From Early Web to Modern Applications  |  Understanding HTTP</title>
+        <link rel="stylesheet" href="style.css"
+    </head>
+    <body>
+        <!--Shared header abd navigation appear on every page.-->
+        <header class="site-header">
+            <div class="container header-inner">
+                <a class="brand" href="index.html">Understanding HTTP</a>
+                <nav aria-label="Main navigation">
+                    <a href="index.html" aria-current="page" class="active">Home</a>
+                    <a href="histroy.html">HTTP Histroy</a>
+                    <a href="how-it-works.html">How HTTP Works</a>
+                    <a href="modern=http.html">Modern HTTP</a>
+                    <a href="references.html">References</a>
+                </nav>
+            </div>
+        </header>
+        <main id="main-content">
+            <section class="page-heading">
+                <div class="container"><p class="eyebrow"> IT 3203 • Research Website</p>
+                    <h1> HTTP: From Early Web to Modern Applications</h1>
+                    <p class='lead'>A beginner-friendly guide to the techonolgy that hepls the World Wide Web work.</p>
+                </div>
+            </section>
+            <div class="container content">
+                <section class="panel">
+                    <h2>What is HTTP?</h2>
+                    <p><strong>HTTP</strong> stand for <strong>Hypertext Transfer Protocol</strong>. It is an application-layer protocol that allows browsers and servers to exchange information. When you visit a website, your browser asks for resources and a server send them back.</p><p>HTTP can transfer HTML documents, images, CSS files, Javascript, and data used by web applications. HTTP is not a programming language; it is a set of rules for communication</p>
+                </section>
+                <section class="panel">
+                    <h2>How does a web page load?</h2>
+                    <div class="'steps">
+                        <div>
+                            <span class="step-number">1</span>
+                            <h3>Enter a web address</h3>
+                            <p> The browser identifies the website and the resource you want.
+                            </p>
+                        </div>
+                        <div>
+                            <span class="step-number">2</span>
+                            <h3>Send a request</h3>
+                            <p> The browser sends an HTTP request to the web server.</p>
+                        </div>
+                        <div>
+                            <span class="step-number">3</span>
+                            <h3>Recieve a response</h3>
+                            <p>The server replies with a status code and, usually, content.</p>
+                        </div>
+                        <div>
+                            <span class="step-number">4</span>
+                            <h3>Display the page</h3>
+                            <p>The browser may request more files, such as stylesheets and images.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="panel">
+                    <h2>Explore the website</h2>
+                    <div class="card-grid">
+                        <article class="info-card">
+                            <h3><a href="histroy.html">HTTP History →</a></h3>
+                            <p> Learn how HTTP changed from simple text documents to faster, modern web connections.</p>                        
+                        </article>
+                        <article class="info-card">
+                            <h3><a href="how-it-works.html">How HTTP Works →</a></h3>
+                            <p>Understand request, responses, HTTP methods, headers, and status codes.</p>
+                        </article>
+                        <article class="info-card">
+                            <h3><a href="modern-http.html">Modern HTTP →</a></h3>
+                            <p>See how HTTP supports security, Web APIs, cookies, caching, and applications.</p>
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <!--Required course attribution, "this is a class project"-->
+        <footer class="site-footer">
+            <div class="container">
+                <p>Created by Noah Plonk • IT 3203 • Fall 2026</p>
+                <p>This website is a class project. Visit the <a href="https://ksuweb.github.io/IT3203?">IT 3203 course website</a></p>
+            </div>
+        </footer>
+    </body>
+</html>
