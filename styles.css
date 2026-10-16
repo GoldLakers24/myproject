@@ -68,3 +68,163 @@ h2 {
     border-bottom: 2px solid lavender;
     padding-bottom: 8px;
 }
+
+.eyebrow {
+    color: slateblue;
+    font-weight: bold;
+}
+
+.lead {
+    font-size: 18px;
+}
+
+/* Content boxes */
+.content {
+    padding: 25px 0;
+}
+
+.panel {
+    background-color: white;
+    border: 1px solid whitesmoke;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.info-card, .steps > div {
+    background-color: oldlace;
+    border: 1px solid whitesmoke;
+    padding: 15px;
+    margin-bottom: 12px;
+}
+
+/* Simple felxbox layout */
+.card-grid, steps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.info-card, .steps > div {
+    flex: 1 1 200px;
+}
+
+.step-number {
+    display: inline-block;
+    background-color: navy;
+    color: white;
+    padding: 4px 12px;
+    font-weight: bold;
+}
+
+/* History page */
+.timeline {
+    border-left: 3px solid lightskyblue;
+    padding-left: 20px;
+}
+
+.timeline article {
+    margin-bottom: 25px;
+}
+
+.year {
+    display: block;
+    color: darkslateblue;
+    font-weight: bold;
+}
+
+/* Tables */
+.table-scroll {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid lightgray;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: lightcyan;
+}
+
+tr:hover {
+    background-color: lightsteelblue
+}
+
+caption {
+    text-align: left;
+    font-weight: bold;
+    padding: 8px;
+}
+
+/* Examples and diagrams */
+pre {
+    background-color: blue;
+    color: white;
+    padding: 15px;
+    overflow-x: auto;
+}
+
+.diagram {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    background-color: lightsteelblue;
+    border: 1px solid whitesmoke;
+}
+
+.diagram-node {
+    background-color: lightcyan;
+    border: 1px solid lightskyblue;
+    padding: 15px;
+    text-align: center;
+}
+
+.diagram-arrows {
+    text-align: center;
+    color: darkslateblue;
+    font-weight: bold;
+}
+
+.diagram-arrows span {
+    display: block;
+}
+
+/* Links and references */
+a {
+    color: darkslateblue
+}
+
+a:hover {
+    color: darkblue;
+}
+
+.references li {
+    margin-bottom: 15px;
+    overflow-wrap: break-word;
+}
+
+.references span {
+    display: block;
+    color: darkgrey;
+}
+
+/* Footer */
+.site-footer {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.site-footer a {
+    color: turquoise;
+}
