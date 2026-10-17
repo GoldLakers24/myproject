@@ -1,1 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="A student research website explainging HTTP and modern web communication.">
+        <title>HTTP: From Early Web to Modern Applications  |  Understanding HTTP</title>
+        <link rel="stylesheet" href="styles.css"
+    </head>
+    <body>
+        <!--Shared header abd navigation appear on every page.-->
+        <header class="site-header">
+            <div class="container header-inner">
+                <a class="brand" href="index.html">Understanding HTTP</a>
+                <nav aria-label="Main navigation">
+                    <a href="index.html" aria-current="page" class="active">Home</a>
+                    <a href="history.html">HTTP Histroy</a>
+                    <a href="how-it-works.html">How HTTP Works</a>
+                    <a href="modern=http.html">Modern HTTP</a>
+                    <a href="references.html">References</a>
+                </nav>
+            </div>
+        </header>
+        <main id="main-content">
+            <section class="page-heading">
+                <div class="container">
+                    <p class="eyebrow"> IT 3203 • Research Website</p>
+                    <h1>How HTTP Works</h1>
+                    <p class="lead">learn how clients and servers exchange request, responses, and web resources.</p>
+                </div>
+            </section>
+            <div class="container content">
+                <section class="panel">
+                    <h2>The client-server model</h2>
+                    <p>A <strong>client</strong> is a browser or application that asks for information. A <strong>server</strong> receives the request, processes it, and sends back a response. One server may respond to requests from many clients.</p>
+                    <div class="diagram" role="img" aria-label="A browser sends an HTTP request to a server, which sends an HTTP response back">
+                        <div class="diagram-node">
+                            Browser<br><small>Client</small>
+                        </div>
+                        <div class="diagram-arrows">
+                            <span>HTTP request →</span>
+                            <span>← HTTP response</span>
+                        </div>
+                        <div class="diagram-node">
+                            Web<br><small>Server</small>
+                        </div>
+                    </div>
+                </section>
+                <section class="panel">
+                    <h2>Parts of an HTTP request</h2>
+                    <p>An HTTP request tells the server which resource or action the client wants. It commonly contains a method, a request target, headers, and sometimes a body</p>
+                    <pre>
+                        <code>
+                            GET /index.html HTTP/1.1 
+                            Host: example.com 
+                            Accept: text/html                   
+                        </code>
+                    </pre>
+                    <p>Here, <strong>GET</strong> asks for a resource, <strong>/index.html</strong> is the request target, and the <strong>Host</strong> and <strong>Accept</strong> lines are headers.</p>
+                </section>
+                <section class="panel">
+                    <h2>Common HTTP methods</h2>
+                    <div class="card-grid">
+                        <article class="info-card">
+                            <h3>GET</h3>
+                            <p>Requests a resource, such as a web page.</p>
+                        </article>
+                        <article class="info-card">
+                            <h3>POST</h3>
+                            <p>Submits data, such as a completed form.</p>
+                        </article>
+                        <article class="info-card">
+                            <h3>PUT</h3>
+                            <p>Replaces a resource with an updated version.</p>
+                        </article>
+                        <article class="info-card">
+                            <h3>PATCH</h3>
+                            <p>Changes part of an existing resource.</p>
+                        </article>
+                        <article class="info-card">
+                            <h3>DELETE</h3>
+                            <p>Requests removal of a resource.</p>
+                        </article>
+                        <article class="info-card">
+                            <h3>HEAD</h3>
+                            <p>Requests response headers without the response body.</p>
+                        </article>
+                    </div>
+                </section>
+                <section class="panel">
+                    <h2>Parts of an HTTP response</h2>
+                    <p>A response communicates the result of a request. It includes a status code, headers, and often a body containing the requested information.</p>
+                    <pre>
+                        <code>
+                            HTTP/1.1 200 OK    
+                            Content-Type: text/html
 
+                            &lt;h1&gt;Welcome!&lt;/h1&gt;
+                        </code>
+                    </pre>
+                </section>
+                <section class="panel">
+                    <h2>HTTP status codes</h2>
+                    <p>Status codes are three-digit numbers grouped into five categories:</p>
+                    <div class="table-scroll">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Group</th>
+                                    <th>Meaning</th>
+                                    <th>Example</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1xx</td>
+                                    <td>Informational</td>
+                                    <td>100 Continue</td>
+                                </tr>
+                                <tr>
+                                    <td>2xx</td>
+                                    <td>Success</td>
+                                    <td>200 OK</td>
+                                </tr>
+                                <tr>
+                                    <td>3xx</td>
+                                    <td>Redirection</td>
+                                    <td>301 Moved Permanently</td>
+                                </tr>
+                                <tr>
+                                    <td>4xx</td>
+                                    <td>Client error</td>
+                                    <td>404 Not Found</td>
+                                </tr>
+                                <tr>
+                                    <td>5xx</td>
+                                    <td>Server error</td>
+                                    <td>500 Internal Server Error</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                <section class="panel">
+                    <h2>See HTTP in your browser</h2>
+                    <p>Most browsers have Developer Tools. Open the Network panel and reload a page to see requests, status codes, resource types, and loading times. This is a useful way to connect these concepts to real websites.</p>
+                </section>
+            </div>
+        </main>
+        <!--Required course attribution, "this is a class project"-->
+        <footer class="site-footer">
+            <div class="container">
+                <p>Created by Noah Plonk • IT 3203 • Fall 2026</p>
+                <p>This website is a class project. Visit the <a href="https://ksuweb.github.io/IT3203?">IT 3203 course website</a></p>
+            </div>
+        </footer>
+    </body>
+</html>
