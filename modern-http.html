@@ -1,1 +1,94 @@
-
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="A student research website explainging HTTP and modern web communication.">
+        <title>HTTP: From Early Web to Modern Applications  |  Understanding HTTP</title>
+        <link rel="stylesheet" href="styles.css"
+    </head>
+    <body>
+        <!--Shared header abd navigation appear on every page.-->
+        <header class="site-header">
+            <div class="container header-inner">
+                <a class="brand" href="index.html">Understanding HTTP</a>
+                <nav aria-label="Main navigation">
+                    <a href="index.html" aria-current="page" class="active">Home</a>
+                    <a href="history.html">HTTP Histroy</a>
+                    <a href="how-it-works.html">How HTTP Works</a>
+                    <a href="modern=http.html">Modern HTTP</a>
+                    <a href="references.html">References</a>
+                </nav>
+            </div>
+        </header>
+        <main id="main-content">
+            <section class="page-heading">
+                <div class="container">
+                    <p class="eyebrow"> IT 3203 • Research Website</p>
+                    <h1>HTTP in Modern Websites</h1>
+                    <p class="lead">Discover HTTPS, APIs, web application, cookies, and caching.</p>
+                </div>
+            </section>
+            <div class="container content">
+                <section class="panel">
+                    <h2>HTTP and web applications</h2>
+                    <p>A web application often has a <strong>front end</strong> and a <strong>back end</strong>. the front end runs in a browser and displays the interface. The back end runs on a server and handles tasks such as processing requests and accessing stored data. HTTP connects these parts.</p>
+                </section>
+                <section class="panel">
+                    <h2>HTTP and web APIs</h2>
+                    <p>An <strong>API</strong> (Application Programming Interface) lets software systems communicate. Many web APIs use HTTP requests to exchange data, often in JSON format.</p>
+                    <pre>
+                        <code>
+                            {
+                                "topic": "HTTP",
+                                "versions": "HTTP/3"
+                            }
+                        </code>
+                    </pre>
+                    <p>For example, a weather website requests forecast information from an API and display the returned data to visitors.</p>
+                </section>
+                <section class="panel">
+                    <h2>HTTP vs. HTTPS</h2>
+                    <div class="card-grid">
+                        <article class="info-card">
+                            <h3>HTTP</h3>
+                            <p>Defines how web requests and responses are exchanged. Without additional protection, information may be readable while traveling across a network.</p>
+                        </article>
+                        <article class="info-card">
+                            <h3>HTTPS</h3>
+                            <p>Uses HTTP with Transport Layer Security (TLS). TLS encrypts information in transit and helps authenticate the server</p>
+                        </article>
+                    </div>
+                </section>
+                <section class="panel">
+                    <h2>Cookies, sessions, and caching</h2>
+                    <div class="card-grid">
+                        <article class="info-card">
+                            <h3>Cookies</h3>
+                            <p>Small pieces of information stored by a browser. Websites can use them to remember settings or recognize returning users.</p>
+                        </article>
+                        <article class="info-card">
+                            <h3>Sessions</h3>
+                            <p>Help a website keep track of a user's activity across multiple requests. A session may use a cookie to identify the session.</p>
+                        </article>
+                        <article class="info-card">
+                            <h3>Caching</h3>
+                            <p>Allows browsers or other systems to reuse previously retrieved resources when appropriate, reducing unnecessary downloads.</p>
+                        </article>
+                    </div>
+                </section>
+                <section class="panel">
+                    <h2>Why these ideas matter</h2>
+                    <p>Modern websites depend on HTTP for much more than downloading pages. They use it to exchange application data, rpovide services through APIs, and deliver contentefficiently. HTTPS adds important protection for information traveling between browsers and servers.</p>
+                </section>
+            </div>
+        </main>
+        <!--Required course attribution, "this is a class project"-->
+        <footer class="site-footer">
+            <div class="container">
+                <p>Created by Noah Plonk • IT 3203 • Fall 2026</p>
+                <p>This website is a class project. Visit the <a href="https://ksuweb.github.io/IT3203?">IT 3203 course website</a></p>
+            </div>
+        </footer>
+    </body>
+</html>
