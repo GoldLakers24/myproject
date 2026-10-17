@@ -162,40 +162,12 @@ caption {
     padding: 8px;
 }
 
-/* Examples and diagrams */
+/* Examples */
 pre {
     background-color: blue;
     color: white;
     padding: 15px;
     overflow-x: auto;
-}
-
-.diagram {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    padding: 20px;
-    background-color: lightsteelblue;
-    border: 1px solid whitesmoke;
-}
-
-.diagram-node {
-    background-color: lightcyan;
-    border: 1px solid lightskyblue;
-    padding: 15px;
-    text-align: center;
-}
-
-.diagram-arrows {
-    text-align: center;
-    color: darkslateblue;
-    font-weight: bold;
-}
-
-.diagram-arrows span {
-    display: block;
 }
 
 /* Links and references */
