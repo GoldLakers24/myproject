@@ -228,3 +228,22 @@ a:hover {
 .site-footer a {
     color: turquoise;
 }
+
+/* Pictures used on topic pages */
+.topic-image {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.topic-image img {
+    width: 100%;
+    max-width: 760px;
+    height: auto;
+    border: 1px solid whitesmoke;
+}
+
+.topic-image figcaption {
+    color: darkgray;
+    font-size: 14px;
+    margin-top: 8px;
+}
