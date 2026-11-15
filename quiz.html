@@ -1,1 +1,150 @@
-
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Test your understanding of HTTP with a ten-question quiz.">
+        <title>HTTP Quiz | Understanding HTTP</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="quiz.js" defer></script>
+    </head>
+    <body>
+        <!-- The same header and navigation are used throughout the website. -->
+        <header class="site-header">
+            <div class="container header-inner">
+                <a class="brand" href="index.html">Understanding HTTP</a>
+                <nav aria-label="Main navigation">
+                    <a href="index.html">Home</a>
+                    <a href="history.html">HTTP History</a>
+                    <a href="how-it-works.html">How HTTP Works</a>
+                    <a href="modern-http.html">Modern HTTP</a>
+                    <a href="quiz.html" aria-current="page">HTTP Quiz</a>
+                    <a href="references.html">References</a>
+                    <a href="about.html">About</a>
+                </nav>
+            </div>
+        </header>
+        <main id="main-content">
+            <section class="page-heading">
+                <div class="container">
+                    <p class="eyebrow">IT 3203 • Research Website</p>
+                    <h1>Test Your HTTP Knowledge</h1>
+                    <p class="lead">Answer all ten questions to check what you learned from this website.</p>
+                </div>
+            </section>
+            <div class="container content">
+                <section class="panel quiz-intro">
+                    <h2>Before you begin</h2>
+                    <p>This quiz has ten questions and a ten-minute time limit. There are fill-in-the-blank, multiple-choice, and multiple-selection questions. You need 7 out of 10 points to pass.</p>
+                    <p class="timer-line">Time remaining: <strong id="timer" aria-live="off">10:00</strong></p>
+                    <p id="timer-message" class="small-note">The timer starts when you begin the quiz.</p>
+                </section>
+                <div id="result" class="result-box" role="status" aria-live="polite" hidden></div>
+                <form id="http-quiz">
+                    <section class="panel question">
+                        <h2>Question 1 <span class="question-type">Fill in the blank</span></h2>
+                        <label for="q1">HTTP stands for Hypertext ______ Protocol.</label>
+                        <input type="text" id="q1" name="q1" autocomplete="off" placeholder="Type the missing word">
+                    </section>
+                    <section class="panel question">
+                        <h2>Question 2 <span class="question-type">Multiple choice</span></h2>
+                        <fieldset>
+                            <legend>Which device or program usually sends an HTTP request when you visit a website?</legend>
+                            <label class="choice"><input type="radio" name="q2" value="a"> The web browser (client)</label>
+                            <label class="choice"><input type="radio" name="q2" value="b"> The website's database only</label>
+                            <label class="choice"><input type="radio" name="q2" value="c"> The monitor</label>
+                            <label class="choice"><input type="radio" name="q2" value="d"> The printer</label>
+                        </fieldset>
+                    </section>
+                    <section class="panel question">
+                        <h2>Question 3 <span class="question-type">Multiple choice</span></h2>
+                        <fieldset>
+                            <legend>Which HTTP method is commonly used to request a resource from a server?</legend>
+                            <label class="choice"><input type="radio" name="q3" value="a"> POST</label>
+                            <label class="choice"><input type="radio" name="q3" value="b"> DELETE</label>
+                            <label class="choice"><input type="radio" name="q3" value="c"> GET</label>
+                            <label class="choice"><input type="radio" name="q3" value="d"> PATCH</label>
+                        </fieldset>
+                    </section>
+                    <section class="panel question">
+                        <h2>Question 4 <span class="question-type">Fill in the blank</span></h2>
+                        <label for="q4">HTTPS uses ______ to encrypt information while it travels between a browser and a server.</label>
+                        <input type="text" id="q4" name="q4" autocomplete="off" placeholder="Enter the abbreviation or full name">
+                    </section>
+                    <section class="panel question">
+                        <h2>Question 5 <span class="question-type">Multiple choice</span></h2>
+                        <fieldset>
+                            <legend>What does the HTTP status code 404 mean?</legend>
+                            <label class="choice"><input type="radio" name="q5" value="a"> The request was successful</label>
+                            <label class="choice"><input type="radio" name="q5" value="b"> The requested resource was not found</label>
+                            <label class="choice"><input type="radio" name="q5" value="c"> The server is redirecting the browser</label>
+                            <label class="choice"><input type="radio" name="q5" value="d"> The server is temporarily processing the request</label>
+                        </fieldset>
+                    </section>
+                    <section class="panel question">
+                        <h2>Question 6 <span class="question-type">Select all that apply</span></h2>
+                        <fieldset>
+                            <legend>Which items can be parts of an HTTP request? Select all correct answers.</legend>
+                            <label class="choice"><input type="checkbox" name="q6" value="method"> A request method</label>
+                            <label class="choice"><input type="checkbox" name="q6" value="target"> A request target or path</label>
+                            <label class="choice"><input type="checkbox" name="q6" value="headers"> Headers</label>
+                            <label class="choice"><input type="checkbox" name="q6" value="body"> A message body (when needed)</label>
+                            <label class="choice"><input type="checkbox" name="q6" value="wallpaper"> The computer's desktop wallpaper</label>
+                        </fieldset>
+                    </section>
+                    <section class="panel question">
+                        <h2>Question 7 <span class="question-type">Multiple choice</span></h2>
+                        <fieldset>
+                            <legend>Which feature is associated with HTTP/2?</legend>
+                            <label class="choice"><input type="radio" name="q7" value="a"> It only supports the GET method</label>
+                            <label class="choice"><input type="radio" name="q7" value="b"> Multiplexing multiple streams over one TCP connection</label>
+                            <label class="choice"><input type="radio" name="q7" value="c"> It removes the need for servers</label>
+                            <label class="choice"><input type="radio" name="q7" value="d"> It uses QUIC instead of TCP</label>
+                        </fieldset>
+                    </section>
+                    <section class="panel question">
+                        <h2>Question 8 <span class="question-type">Multiple choice</span></h2>
+                        <fieldset>
+                            <legend>Which transport protocol does HTTP/3 use through QUIC?</legend>
+                            <label class="choice"><input type="radio" name="q8" value="a"> TCP</label>
+                            <label class="choice"><input type="radio" name="q8" value="b"> FTP</label>
+                            <label class="choice"><input type="radio" name="q8" value="c"> UDP</label>
+                            <label class="choice"><input type="radio" name="q8" value="d"> SMTP</label>
+                        </fieldset>
+                    </section>
+                    <section class="panel question">
+                        <h2>Question 9 <span class="question-type">Multiple choice</span></h2>
+                        <fieldset>
+                            <legend>What does a web server usually send back after receiving an HTTP request?</legend>
+                            <label class="choice"><input type="radio" name="q9" value="a"> An HTTP response</label>
+                            <label class="choice"><input type="radio" name="q9" value="b"> A keyboard command</label>
+                            <label class="choice"><input type="radio" name="q9" value="c"> A new browser window every time</label>
+                            <label class="choice"><input type="radio" name="q9" value="d"> A computer operating system</label>
+                        </fieldset>
+                    </section>
+                    <section class="panel question">
+                        <h2>Question 10 <span class="question-type">Multiple choice</span></h2>
+                        <fieldset>
+                            <legend>What is one important benefit of HTTPS?</legend>
+                            <label class="choice"><input type="radio" name="q10" value="a"> It makes every website load instantly</label>
+                            <label class="choice"><input type="radio" name="q10" value="b"> It prevents all possible online attacks</label>
+                            <label class="choice"><input type="radio" name="q10" value="c"> It encrypts information sent between the browser and server</label>
+                            <label class="choice"><input type="radio" name="q10" value="d"> It replaces HTML and CSS</label>
+                        </fieldset>
+                    </section>
+                    <div class="quiz-buttons">
+                        <button type="submit" id="submit-quiz">Submit Quiz</button>
+                        <button type="reset" class="reset-button" id="reset-quiz">Retake / Reset Quiz</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <!-- Required class-project footer. -->
+        <footer class="site-footer">
+            <div class="container">
+                <p>Created by Noah Plonk • IT 3203 • Fall 2026</p>
+                <p>This website is a class project. Visit the <a href="https://ksuweb.github.io/IT3203/">IT 3203 course website</a></p>
+            </div>
+        </footer>
+    </body>
+</html>
