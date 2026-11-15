@@ -219,3 +219,177 @@ a:hover {
     font-size: 14px;
     margin-top: 8px;
 }
+
+/* Milestone 2 quiz styles */
+.quiz-intro {
+    border-left: 5px solid lightskyblue;
+}
+
+.timer-line {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+#timer {
+    color: darkgreen;
+    font-size: 24px;
+}
+
+#timer.timer-warning {
+    color: darkred;
+}
+
+.small-note {
+    color: dimgray;
+    font-size: 14px;
+}
+
+.question h2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.question-type {
+    color: darkslateblue;
+    background-color: lavender;
+    border-radius: 4px;
+    font-size: 13px;
+    padding: 4px 8px;
+}
+
+.question fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.question legend,
+.question > label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.choice {
+    display: block;
+    background-color: oldlace;
+    border: 1px solid lightgray;
+    padding: 10px;
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+.choice:hover {
+    background-color: lightcyan;
+}
+
+.choice input {
+    margin-right: 8px;
+}
+
+.question input[type="text"] {
+    width: 100%;
+    max-width: 450px;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    padding: 11px;
+    font-size: 16px;
+}
+
+.quiz-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.quiz-buttons button {
+    background-color: blue;
+    color: white;
+    border: 0;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.quiz-buttons button:hover {
+    background-color: royalblue;
+}
+
+.quiz-buttons .reset-button {
+    background-color: dimgray;
+}
+
+.quiz-buttons .reset-button:hover {
+    background-color: black;
+}
+
+.quiz-buttons button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+.result-box {
+    border: 2px solid gray;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: white;
+}
+
+.result-pass {
+    border-color: darkgreen;
+    background-color: #eff8ef;
+}
+
+.result-fail {
+    border-color: darkred;
+    background-color: #fff1f1;
+}
+
+.result-pass > h2 {
+    color: darkgreen;
+}
+
+.result-fail > h2 {
+    color: darkred;
+}
+
+.final-score {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.answer-review {
+    border: 1px solid lightgray;
+    padding: 12px;
+    margin: 12px 0;
+    background-color: white;
+}
+
+.answer-review h3 {
+    margin-top: 0;
+}
+
+.correct-answer {
+    border-left: 5px solid green;
+}
+
+.correct-answer h3 {
+    color: darkgreen;
+}
+
+.incorrect-answer {
+    border-left: 5px solid firebrick;
+}
+
+.incorrect-answer h3 {
+    color: darkred;
+}
+
+@media screen and (max-width: 600px) {
+    .quiz-buttons button {
+        width: 100%;
+    }
+}
