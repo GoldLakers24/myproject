@@ -1,4 +1,4 @@
-/* General oage styles */
+/* General page styles */
 body {
     margin:0;
     background-color: white;
@@ -44,12 +44,15 @@ nav a {
     margin: 3px;
 }
 
-nav a:hover, nav a.active {
+nav a:hover, nav a[aria-current="page"] {
     background-color: royalblue;
     color: white;
 }
 
 /* Main page headings */
+#main-content {
+    scroll-margin-top: 20px;
+}
 .page-heading {
     background-color: white;
     padding: 30px 0;
@@ -97,8 +100,8 @@ h2 {
     margin-bottom: 12px;
 }
 
-/* Simple felxbox layout */
-.card-grid, steps {
+/* Simple flexbox layout */
+.card-grid, .steps {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
@@ -157,6 +160,7 @@ tr:hover {
 }
 
 caption {
+    color: #333333;
     text-align: left;
     font-weight: bold;
     padding: 8px;
@@ -186,7 +190,7 @@ a:hover {
 
 .references span {
     display: block;
-    color: darkgrey;
+    color: #444444;
 }
 
 /* Footer */
@@ -215,7 +219,7 @@ a:hover {
 }
 
 .topic-image figcaption {
-    color: darkgray;
+    color: #444444;
     font-size: 14px;
     margin-top: 8px;
 }
@@ -392,4 +396,14 @@ a:hover {
     .quiz-buttons button {
         width: 100%;
     }
+}
+
+/* Homepage key terms */
+.key-terms dt {
+    color: navy;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.key-terms dd {
+    margin-left: 0;
 }
