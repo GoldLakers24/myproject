@@ -1,1 +1,69 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Six important concepts that explain how HTTP works.">
+    <title>HTTP Key Concepts | Understanding HTTP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Shared header and navigation appear on every page. -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">Understanding HTTP</a>
+            <nav aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="history.html">HTTP History</a>
+                <a href="how-it-works.html">How HTTP Works</a>
+                <a href="modern-http.html">Modern HTTP</a>
+                <a href="key-concepts.html" aria-current="page">Key Concepts</a>
+                <a href="quiz.html">HTTP Quiz</a>
+                <a href="references.html">References</a>
+                <a href="about.html">About</a>
+            </nav>
+        </div>
+    </header>
+    <main id="main-content">
+        <section class="page-heading">
+            <div class="container">
+                <p class="eyebrow">HTTP Basics</p>
+                <h1>Key Concepts of HTTP</h1>
+                <p class="lead">These six concepts explain the main parts of communication between a browser and a web server.</p>
+            </div>
+        </section>
+        <div class="container content">
+            <section class="panel">
+                <h2>1. Client and Server</h2>
+                <p>A client is the browser or application that requests information. A server receives the request, processes it, and sends a response. A browser and a web server work together whenever a person visits a website.</p>
+            </section>
+            <section class="panel">
+                <h2>2. HTTP Request</h2>
+                <p>An HTTP request is a message sent by a client to ask for a resource or action. It can include a method, a request target, headers, and sometimes a body containing data.</p>
+            </section>
+            <section class="panel">
+                <h2>3. HTTP Response</h2>
+                <p>An HTTP response is the server's reply to a request. It includes a status code, headers, and often a body with information such as an HTML document, an image, or application data.</p>
+            </section>
+            <section class="panel">
+                <h2>4. HTTP Methods</h2>
+                <p>Methods describe the action a client wants to perform. GET is commonly used to retrieve information, POST submits information, and methods such as PUT, PATCH, and DELETE are used to update or remove resources.</p>
+            </section>
+            <section class="panel">
+                <h2>5. Status Codes</h2>
+                <p>Status codes are three-digit numbers that summarize the result of a request. For example, 200 means the request succeeded, 404 means the requested resource was not found, and 500 indicates a server error.</p>
+            </section>
+            <section class="panel">
+                <h2>6. HTTPS and TLS</h2>
+                <p>HTTPS is HTTP protected by Transport Layer Security (TLS). TLS encrypts information while it travels between a client and server and helps the client verify the server's identity.</p>
+            </section>
+        </div>
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <p>Created by Noah Plonk • IT 3203 • Fall 2026</p>
+            <p>This website is a class project. Visit the <a href="https://ksuweb.github.io/IT3203/">IT 3203 course website</a></p>
+        </div>
+    </footer>
+</body>
+</html>
